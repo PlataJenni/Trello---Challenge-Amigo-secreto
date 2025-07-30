@@ -161,3 +161,11 @@ ul {
 .button-draw:hover {
     background-color: var(--color-button-hover);
 }
+.button-restart img {
+    margin-right: 40px;
+}
+
+.button-restart:hover {
+    background-color: var(--color-button-hover);
+}
+
