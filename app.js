@@ -25,7 +25,7 @@ function agregarAmigo() {
     campoNombre.focus();
 }
 
-
+//Función de actualizar lista
 function actualizarLista() {
     const lista = document.getElementById('listaAmigos');
     lista.innerHTML = '';
@@ -50,7 +50,7 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * totalAmigos);
     const amigoSecreto = amigos[indiceAleatorio];
     const elementoResultado = document.getElementById('resultado');
-    elementoResultado.innerHTML = `<li>El amigo secreto es: ${amigoSecreto}</li>`;
+    elementoResultado.innerHTML = `<li> ${amigoSecreto}</li>`;
     sorteoRealizado = true;
     document.getElementById('amigo').disabled = true;
     document.getElementById('boton-agregar').disabled = true;
@@ -74,5 +74,5 @@ function reiniciarJuego() {
     campoNombre.value = ''; 
     campoNombre.focus(); 
     
-    alert('¡Juego reiniciado! Ya puedes agregar nuevos amigos.');
+    //alert('¡Juego reiniciado! Ya puedes agregar nuevos amigos.');
 }
